@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_polygon/current_loc.dart';
 import 'package:flutter_polygon/polygon.dart';
 import 'package:flutter_polygon/polyline.dart';
 import 'package:flutter_polygon/symbol.dart';
 
 import 'home.dart';
+import 'mapclick.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,8 +25,9 @@ class _MyAppState extends State<MyApp> {
       // home: HomePage()
       // home: SymbolFlutter(),
       // home: PolygonFlutter(),
-      // home: AddPolygonWidget(),
-      home: AddPolylineWidget(),
+      home: MapClickEvent(),
+      // home: CurrentLocationWidget(),
+      // home: AddPolylineWidget(),
     );
   }
 }
